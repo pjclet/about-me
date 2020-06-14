@@ -1,9 +1,30 @@
 <html>
+	
+
 	<head>
-		<title> Hi there! </title>
+		<title> Welcome </title>
 	</head>
 
-	<body>
+	<body style="font-family: sans-serif;">
+		<style>
+		body {background-image: url("IMG_3651.jpg"); background-repeat: repeat-x;}
+		</style>
+
+
+
+		<style>
+		p {
+			color: white;
+		}
+		</style>
+
+		<style>
+		h1, h2, h3 {
+			color: white;
+		}
+
+		</style>
+
 		<h1>Header 1 TESTING UPLOAD 123124123</h1>
 		<h2>Header 2</h2>
 		<h3>Header 3</h3>
@@ -49,7 +70,59 @@
 
 		<h1 id="faq"> THIS IS THE FAQ?</h3>
 
-		<img src="/IMG_3651.jpg" onload="alert('Image loaded')" width="1000" alt="one sad boi"> 
+		<img src="IMG_3651.jpg" onload="alert('Image loaded')" width="1000" alt="one sad boi"> 
 
 	</body>
+
+	<body>
+		<style>
+		p#last {
+		    color: red;    
+		}
+
+		p.example {
+		    color: green;
+		}
+
+		p {
+		    color: blue;
+		}    
+		</style>
+		<p>I am blue</p>
+		<p class="example">I am green now</p>
+		<p id="last" class="example">And now I am red</p>
+	</body>
+
+	<body>
+		<style>
+		.strongblue > strong {
+		    color: blue;    
+		}
+		</style>
+		<p>This is the <strong>first</strong> sentence.</p>
+		<p class="strongblue">This is the <strong>second</strong> sentence.</p>
+
+		<!-- 
+		<p class="nice">This is a nice paragraph.</p>
+		<p class="nice">This is another nice paragraph.</p>
+		<p>This is a standard paragraph.</p>
+
+		<script>
+		    // this code colors the first nice paragraph in blue
+		    var firstNiceParagraph = document.querySelector(".nice");
+		    firstNiceParagraph.style.color = "blue";
+		</script>
+		-->
+
+
+	</body>
+
+
+
+
+
+
+
+
+
 </html>
