@@ -3,9 +3,12 @@
 
 	<head>
 		<title> Welcome </title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 
 	<body style="font-family: sans-serif;">
+
 		<style>
 		body {background-image: url("IMG_3651.jpg"); background-repeat: repeat-x;}
 		</style>
@@ -16,15 +19,20 @@
 		p {
 			color: white;
 		}
-		</style>
 
-		<style>
 		h1, h2, h3 {
 			color: white;
 		}
 
-		</style>
+		a.special:visited {
+			color:red;
 
+		p:hover {
+			background-color: yellow;
+		}
+
+		</style>
+		<!-- pseudo classes!^^-->
 		<h1>Header 1 TESTING UPLOAD 123124123</h1>
 		<h2>Header 2</h2>
 		<h3>Header 3</h3>
@@ -87,6 +95,10 @@
 		p {
 		    color: blue;
 		}    
+
+		p:hover {
+			color:yellow;
+		}
 		</style>
 		<p>I am blue</p>
 		<p class="example">I am green now</p>
@@ -117,7 +129,39 @@
 
 	</body>
 
+	<body>
+	<style>
+	a:active {
+	    font-weight: bold;    
+	}
+	</style>
+	<p>
+	    <a href="test.html">First Section</a>
+	    <a href="#second">Second Section</a>
+	    <a href="#third">Third Section</a>
+	</p>
+	</body>
 
+	<body>
+	    <button type="button" class="btn btn-default" href="test.html">Default</button>
+	    <button type="button" class="btn btn-primary">Primary</button>
+	    <button type="button" class="btn btn-success">Success</button>
+	    <button type="button" class="btn btn-info">Info</button>
+	    <button type="button" class="btn btn-warning">Warning</button>
+	    <button type="button" class="btn btn-danger">Danger</button>
+	    <button type="button" class="btn btn-link">Link</button>
+	</body>
+
+	<body>
+		<hr/>
+		<hr/>
+		<hr/>
+		<hr/>
+		<hr/>
+		<p id="find">
+			yes
+		</p>
+	</body>
 
 
 
