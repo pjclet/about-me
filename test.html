@@ -8,16 +8,17 @@
 
 
 
-	<body>
+	<body id="main">
 		<style>
 
-		body{
+		body#main{
 			
 			font-family: "Lato", serif;
 			background-image: url("pics/IMG_4627 2.jpg");
 			background-repeat: no-repeat;
 			background-size: 100%; 
 			background-position: auto;/* */
+			/*box-shadow: 0px 0px 50px rgba(10,10,40,1);*/
 
 		}
 
@@ -32,9 +33,51 @@
 		}
 
 		div#center{
-			align-self: center;
-			text-align: center;
+			background-color: rgba(100,0,0,00);
+			min-height: 85px;
 		}
+
+		div#left{
+			text-align: left;
+			background-color: rgba(0,0,100,0);
+			min-height: 500px;
+			max-width: 50%;
+			left:50%;
+		}
+
+
+		ul{
+			list-style-type:none;
+			margin:5px;/* fix this later? a bit sloppy having two styles porbably*/
+			padding:10px;
+			background-color: rgba(0,0,0,0);
+			max-height: 300px;
+			text-align: right;
+			position: relative;
+			float: left;
+			display: block;
+			left: 50%;
+
+		}
+
+		li {
+			position:relative;
+			float:left;
+			display: inline;
+			right: 50%
+		}
+
+		a#name{
+			/*background-color: rgba(0,100,0,0.5);*/
+			font-size: 100px;
+			color: rgba(255,255,255,0.9);
+			white-space: nowrap;
+			vertical-align: all;
+			text-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+
+
+		}
+
 
 
 		</style>
@@ -50,30 +93,6 @@
 		</div>
 
 		<div id="center">
-
-			<style>
-
-			ul{
-				list-style-type:none;
-				margin:5px;
-				padding:10px;
-				background-color: rgba(0,0,0,0);
-				max-height: 300px;
-				text-align: right;
-				position: relative;
-				float: left;
-				display: block;
-				left: 50%;
-
-			}
-			li {
-				position:relative;
-				float:left;
-				display: inline;
-				right: 50%
-			}
-
-			</style>
 
 			<ul>
 				<li>
@@ -96,9 +115,12 @@
 
 
 
-		<div style="left: 50%; background-color: rgba(0,0,0,0.5);">
-
+		<div id="left">
+			<a id="name">PJ Clet</a>
 		</div>
+
+
+
 
 		<!--
 		<h1 class="display-2" id="main">Welcome</h1>
