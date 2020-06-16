@@ -4,13 +4,16 @@
 		<title>PJ Clet</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="pics/logov1.png">
 	</head>
 
 	<style>
 
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 		body#main{
 			
-			font-family: "Lato";
+			font-family: "Lato", sans-serif;
 			background-image: url("pics/IMG_4627 2.jpg");
 			background-repeat: no-repeat;
 			background-size: 100%; 
@@ -44,8 +47,10 @@
 		}
 
 		div#right{
-			/*background-color: rgba(0,100,100,0.5);*/
-			height: 100%;
+			border-radius: 5px;
+			padding: 10px;
+			background-color: rgba(30,30,30,0.15);
+			height: auto;
 			width: 50%;
 			position: absolute;
 			right: 0;
@@ -86,22 +91,51 @@
 			color: rgba(255,255,255,0.9);
 			white-space: nowrap;
 			text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
-			margin: 30px;
+			/*margin: 30px;*/
+			text-align: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+
 		}
 
 		a#status{
 			font-style: "Lato";
 			font-size: 2.5vw;
 			color: rgba(255,255,255,0.9);
-			margin: 30px;
 			white-space: nowrap;
 			text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+			text-align: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		a#major {
+			font-style: "Lato";
+			font-size: 1vw;
+			color: rgba(255,255,255,0.9);
+			white-space: nowrap;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+			text-align: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		a#aboutme {
 			color: rgba(255,255,255,0.9);
 			text-align: justify;
-			font-size: 2vw;
+			font-size: 1.25vw;
+			text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+
+		}
+
+		img#face {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
 		}
 
 		@keyframes swoopLeft {
@@ -123,9 +157,9 @@
 
 
 		<div id="navbar">
-			<nav class="navbar navbar-dark" style="background-color: rgba(30,30,30)">
+			<nav class="navbar navbar-dark" style="background-color: rgba(30,30,30, 0.75)">
 			  	<a class="navbar-brand" href="">
-			    <img src="IMG_3651.jpg" width="30" height="30" alt="" loading="lazy"> Paul-John Clet
+			    <img src="pics/logov1.png" width="30" height="30" alt="my logo" loading="lazy"> Paul-John Clet
 			  	</a>
 			</nav>
 		</div>
@@ -134,17 +168,17 @@
 
 			<ul>
 				<li>
-					<a href="https://www.instagram.com/pj.clet/" target="_blank" style="text-align:center;">
+					<a href="https://www.instagram.com/pj.clet/" target="_blank" style="text-align:center;" data-toggle="tooltip" data-placement="bottom" title="My Instagram">
 						<img src="pics/instagram-icon.png" width="75px" >
 					</a>
 				</li>
 				<li>
-					<a href="mailto:pjbautistaclet@gmail.com" target="_blank" style="text-align:center;">
+					<a href="mailto:pjbautistaclet@gmail.com" target="_blank" style="text-align:center;" data-toggle="tooltip" data-placement="bottom" title="Contact me via Email">
 						<img src="pics/email-icon.png"width="75px">
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/pjclet/about-me" target="_blank" style="text-align:center;">
+					<a href="https://github.com/pjclet/about-me" target="_blank" style="text-align:center;" data-toggle="tooltip" data-placement="bottom" title="Github repository">
 						<img src="pics/github-icon.png"width="75px">
 					</a>
 				</li>
@@ -155,22 +189,49 @@
 		<div id="wrapper">
 			<div id="left">
 				
+				<img src="pics/face.png" id="face" alt="my face">
+
+
 				<a id="name">PJ Clet</a>
-				<br>
 				<a id="status">Class of 2023 </a> 
-				<br> 
 				<a id="status">Rensselaer Polytechnic Institute</a>
+				<a id="major">Computer Systems Engineering and Electrical Engineering Dual Major</a>
 				
 			</div>
 
 			<div id="right">
 				
-				<br>
-				<br>
-				<br>
+				<br> 
 
+				<!-- add this into the style class!-->
+				<div class="card" style="width: 30%; display: inline-block; margin: 1%">
+					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
+					<div class="card-body">
+						<h5 class="card-title" style="font-size: 2vw;">Resume</h5>
+						<p class="card-text" style="font-size: 1vw; white-space: nowrap;">Last updated Jun 16, 2020</p>
+						<a href="pics/resume.pdf" target="_blank" class="btn btn-primary" style="width: 100%; white-space: nowrap; font-size: 1vw;"> Full Screen </a>
+					</div>
+				</div>
 
+				<div class="card" style="width: 30%; display: inline-block; margin: 1%">
+					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
+					<div class="card-body">
+						<h5 class="card-title" style="font-size: 2vw;">Resume</h5>
+						<p class="card-text" style="font-size: 1vw; white-space: nowrap;">Last updated Jun 16, 2020</p>
+						<a href="pics/resume.pdf" target="_blank" class="btn btn-primary" style="width: 100%; white-space: nowrap; font-size: 1vw;"> Full Screen </a>
+					</div>
+				</div>
 
+				<div class="card" style="width: 30%; display: inline-block; margin: 1%">
+					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
+					<div class="card-body">
+						<h5 class="card-title" style="font-size: 2vw;">Resume</h5>
+						<p class="card-text" style="font-size: 1vw; white-space: nowrap;">Last updated Jun 16, 2020</p>
+						<a href="pics/resume.pdf" target="_blank" class="btn btn-primary" style="width: 100%; white-space: nowrap; font-size: 1vw;"> Full Screen </a>
+					</div>
+				</div>
+
+				<br>
 				<a id="aboutme"> 
 				This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin.</a>
 				
