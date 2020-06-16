@@ -6,10 +6,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 	</head>
 
-
-
-	<body id="main">
-		<style>
+	<style>
 
 		body#main{
 			
@@ -19,7 +16,6 @@
 			background-size: 100%; 
 			background-position: auto;/* */
 			/*box-shadow: 0px 0px 50px rgba(10,10,40,1);*/
-
 		}
 
 		div#navbar{
@@ -40,10 +36,11 @@
 		div#left{
 			/*background-color: rgba(0,0,100,0.5);*/
 			height: 100%;
-			left: 0;
+			left: 0px;
 			width: 50%;
 			position: absolute;
-
+			animation-name: swoopLeft;
+			animation-duration: 2s;
 		}
 
 		div#right{
@@ -51,8 +48,9 @@
 			height: 100%;
 			width: 50%;
 			position: absolute;
-			right: 0 ;
-
+			right: 0;
+			animation-name: swoopRight;
+			animation-duration: 1.5s;
 		}
 
 		div#wrapper{
@@ -61,7 +59,6 @@
 			/*border: 10px solid red;*/
 			/*background-color: rgba(255,255,0,0.5);*/
 		}
-
 
 		ul{
 			list-style-type:none;
@@ -74,7 +71,6 @@
 			float: left;
 			display: block;
 			left: 50%;
-
 		}
 
 		li {
@@ -86,35 +82,43 @@
 
 		a#name{
 			/*background-color: rgba(0,100,0,0.5);*/
-			font-size: 100px;
+			font-size: 10vw;
 			color: rgba(255,255,255,0.9);
 			white-space: nowrap;
-			text-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+			text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
 			margin: 30px;
-
-
-
 		}
 
 		a#status{
 			font-style: "Lato";
-			font-size: 30px;
+			font-size: 2.5vw;
 			color: rgba(255,255,255,0.9);
 			margin: 30px;
 			white-space: nowrap;
-			text-shadow: 5px 5px 5px rgba(0,0,0,0.9);
-			
-
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
 		}
 
 		a#aboutme {
 			color: rgba(255,255,255,0.9);
 			text-align: justify;
+			font-size: 2vw;
+		}
+
+		@keyframes swoopLeft {
+			0% {left: -100px;}
+			100% {left: 0px;}
+		}
+
+		@keyframes swoopRight {
+			0% {right: -200px;}
+			100% {right: 0px;}
 		}
 
 
-
 		</style>
+
+	<body id="main">
+
 
 
 
@@ -161,7 +165,14 @@
 
 			<div id="right">
 				
-				<a id="aboutme"> This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin.</a>
+				<br>
+				<br>
+				<br>
+
+
+
+				<a id="aboutme"> 
+				This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin.</a>
 				
 
 			</div>
