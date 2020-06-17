@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PJ Clet</title>
+		<title>About Me</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="pics/logov1.png">
 	</head>
 
 	<style>
-
 		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-		body#main{
+		body{
 			
 			font-family: "Lato", sans-serif;
 			background-image: url("pics/IMG_4627 2.jpg");
 			background-repeat: no-repeat;
-			background-size: 100%; 
-			background-position: auto;/* */
+			background-size: cover; 
+			background-position: center;/* */
 			/*box-shadow: 0px 0px 50px rgba(10,10,40,1);*/
+		}
+
+		body#second{
+			font-family: "Lato", sans-serif;
+			/*background-image: url("pics/IMG_4627 2.jpg");*/
+			background-color: rgba(255,255,0,0.5);
+			background-repeat: no-repeat;
+			background-size: 100%; 
+			background-position: auto;
 		}
 
 		div#navbar{
@@ -31,37 +39,61 @@
 			color: rgba(255,255,0,0.5);
 		}
 
+		h5#main {
+			font-size: 2vw;
+			margin-left: auto;
+		}
+
+		p#small-text {
+			font-size: 10pt;
+			white-space: nowrap;
+			
+		}
+
 		div#center{
-			/*background-color: rgba(100,0,0,0.5);*/
-			min-height: 85px;
+			/*background-color: rgba(100,0,255,0.5);*/
+			height: 7.5vw;
+			max-width: 100vw;
 		}
 
 		div#left{
 			/*background-color: rgba(0,0,100,0.5);*/
-			height: 100%;
+			height: auto;
 			left: 0px;
 			width: 50%;
 			position: absolute;
 			animation-name: swoopLeft;
-			animation-duration: 2s;
+			animation-duration: 1.75s;
+			display: block;
+			overflow: hidden;
 		}
 
 		div#right{
-			border-radius: 5px;
+			border-radius: 1vw;
 			padding: 10px;
-			background-color: rgba(30,30,30,0.15);
+			background-color: rgba(30,30,30,0.30);
 			height: auto;
 			width: 50%;
 			position: absolute;
 			right: 0;
 			animation-name: swoopRight;
-			animation-duration: 1.5s;
+			animation-duration: 2.25s;
+			display: block;
+			overflow: hidden;
 		}
 
 		div#wrapper{
 			width: 100%;
-			height: 500px;
+			height: 60vw;
 			/*border: 10px solid red;*/
+			/*background-color: rgba(255,15,0,0.5);*/
+			overflow: hidden;
+			min-height: 500px; 
+		}
+
+		div#projects {
+			width: 100%;
+			height: auto;
 			/*background-color: rgba(255,255,0,0.5);*/
 		}
 
@@ -126,9 +158,17 @@
 		a#aboutme {
 			color: rgba(255,255,255,0.9);
 			text-align: justify;
-			font-size: 1.25vw;
-			text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+			font-size: 12pt;
+			line-height: 2;
+			text-shadow: 1px 1px 3px rgba(0,0,0,1);
+			overflow: hidden;
 
+		}
+
+		a#btn-text {
+			width: 100%;
+			white-space: nowrap; 
+			font-size: 1vw;
 		}
 
 		img#face {
@@ -136,6 +176,13 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 50%;
+		}
+
+		div#c1 {
+			width: 30%; 
+			display: inline-block; 
+			margin: 1%;
+			overflow: auto;
 		}
 
 		@keyframes swoopLeft {
@@ -148,16 +195,11 @@
 			100% {right: 0px;}
 		}
 
-
 		</style>
 
-	<body id="main">
-
-
-
-
+	<body>
 		<div id="navbar">
-			<nav class="navbar navbar-dark" style="background-color: rgba(30,30,30, 0.75)">
+			<nav class="navbar navbar-dark" style="background-color: rgba(30,30,30, 0.75); box-shadow: 0px 3px 30px rgba(210, 7, 58);">
 			  	<a class="navbar-brand" href="">
 			    <img src="pics/logov1.png" width="30" height="30" alt="my logo" loading="lazy"> Paul-John Clet
 			  	</a>
@@ -168,18 +210,18 @@
 
 			<ul>
 				<li>
-					<a href="https://www.instagram.com/pj.clet/" target="_blank" style="text-align:center;" data-toggle="tooltip" data-placement="bottom" title="My Instagram">
-						<img src="pics/instagram-icon.png" width="75px" >
+					<a href="https://www.instagram.com/pj.clet/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="My Instagram">
+						<img src="pics/instagram-icon 2.png" style="height: 5vw;" >
 					</a>
 				</li>
 				<li>
-					<a href="mailto:pjbautistaclet@gmail.com" target="_blank" style="text-align:center;" data-toggle="tooltip" data-placement="bottom" title="Contact me via Email">
-						<img src="pics/email-icon.png"width="75px">
+					<a href="mailto:pjbautistaclet@gmail.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Contact me via Email">
+						<img src="pics/email-icon 2.png" style="height: 5vw;">
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/pjclet/about-me" target="_blank" style="text-align:center;" data-toggle="tooltip" data-placement="bottom" title="Github repository">
-						<img src="pics/github-icon.png"width="75px">
+					<a href="https://github.com/pjclet/about-me" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Github repository">
+						<img src="pics/github-icon 2.png" style="height: 5vw;">
 					</a>
 				</li>
 			</ul>
@@ -204,83 +246,64 @@
 				<br> 
 
 				<!-- add this into the style class!-->
-				<div class="card" style="width: 30%; display: inline-block; margin: 1%">
+				<div class="card" id="c1">
 					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
 					<div class="card-body">
-						<h5 class="card-title" style="font-size: 2vw;">Resume</h5>
-						<p class="card-text" style="font-size: 1vw; white-space: nowrap;">Last updated Jun 16, 2020</p>
-						<a href="pics/resume.pdf" target="_blank" class="btn btn-primary" style="width: 100%; white-space: nowrap; font-size: 1vw;"> Full Screen </a>
+						<h5 class="card-title" id="main">Resume</h5>
+						<p class="card-text" id="small-text">Last updated Jun 16, 2020</p>
+						<a href="pics/resume.pdf" target="_blank" class="btn btn-danger" id="btn-text"> Full Screen </a>
 					</div>
 				</div>
 
-				<div class="card" style="width: 30%; display: inline-block; margin: 1%">
+				<div class="card" id="c1">
 					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
 					<div class="card-body">
-						<h5 class="card-title" style="font-size: 2vw;">Resume</h5>
-						<p class="card-text" style="font-size: 1vw; white-space: nowrap;">Last updated Jun 16, 2020</p>
-						<a href="pics/resume.pdf" target="_blank" class="btn btn-primary" style="width: 100%; white-space: nowrap; font-size: 1vw;"> Full Screen </a>
+						<h5 class="card-title" id="main">Resume</h5>
+						<p class="card-text" id="small-text">Last updated Jun 16, 2020</p>
+						<a href="pics/resume.pdf" target="_blank" class="btn btn-danger" id="btn-text"> Full Screen </a>
 					</div>
 				</div>
 
-				<div class="card" style="width: 30%; display: inline-block; margin: 1%">
+				<div class="card" id="c1">
 					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
 					<div class="card-body">
-						<h5 class="card-title" style="font-size: 2vw;">Resume</h5>
-						<p class="card-text" style="font-size: 1vw; white-space: nowrap;">Last updated Jun 16, 2020</p>
-						<a href="pics/resume.pdf" target="_blank" class="btn btn-primary" style="width: 100%; white-space: nowrap; font-size: 1vw;"> Full Screen </a>
+						<h5 class="card-title" id="main">Resume</h5>
+						<p class="card-text" id="small-text">Last updated Jun 16, 2020</p>
+						<a href="pics/resume.pdf" target="_blank" class="btn btn-danger" id="btn-text"> Full Screen </a>
 					</div>
 				</div>
 
 				<br>
-				<a id="aboutme"> 
-				This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin. This is some random text about me. when I finish this is going to be a short bio about who i am and what i do. leoris ipsum sumthin.</a>
+				<div style="max-height: 150px; background-color:rgba(100,100,100, 0.25); overflow: auto; border-radius: 5px; margin: 3px; padding: 3px;">
+					<a id="aboutme"> 
+					Welcome to my page! Above you will find my links along with my github repository for this project. I am currently a sophomore at RPI. My interests include circuits, coding, music, and cooking. I have a passion for learning new skills and I'm always looking for ways to improve. With that said, contact me if you want to get in touch, have ideas for this site, or just want to chat! 
+					</a>
+				</div>
 				
 
 			</div>
 		</div>
 
+		<div id="projects">
+			<p style="color: rgb(255,255,255,0.9); text-align: right; margin: 8px;"> Last updated June 17, 2020</p>
 
-
-
-		<!--
-		<h1 class="display-2" id="main">Welcome</h1>
-		-->
-
-	
-		<!--
-		<div class="card mb-3" style="max-width: 500px;" id="">
-		  <div class="row no-gutters">
-		    <div class="col-md-4">
-		      <img src="IMG_3651.jpg" class="card-img" alt="help">
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Card title</h5>
-		        <p class="card-text">A link to my social media.</p>
-		        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-		      </div>
-		    </div>
-		  </div>
 		</div>
+	</body>		
+		
 
 
-		<div class="card mb-3" style="max-width: 500px;">
-		  <div class="row no-gutters">
-		    <div class="col-md-4">
-		      <img src="IMG_3651.jpg" class="card-img" alt="help">
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Card title</h5>
-		        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
 
-		-->
-	</body>
+
+
+
+
+
+
+
+
+
+
+
 
 	
 
