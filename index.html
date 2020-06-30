@@ -5,396 +5,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="pics/logov1.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	</head>
 
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-		/* This is all for mobile devices*/
-		@media screen and (max-width: 500px) {
-
-		div#left{
-			/*background-color: rgba(0,0,100,0.5);*/
-			height: auto;
-			left: 0px;
-			width: 100%;
-			animation-name: swoopLeft;
-			animation-duration: 1.75s;
-		}
-
-		div#right{
-			border-radius: 1vw;
-			padding: 10px;
-			margin: 1vw;
-			background-color: rgba(30,30,30,0.30);
-			height: auto;
-			width: 98vmin;
-			right: 0;
-			animation-name: swoopRight;
-			animation-duration: 2.25s;
-			margin-top: 50px;
-
-		}
-
-		body{
-			
-			font-family: "Lato", sans-serif;
-			background-image: url("pics/IMG_4627 2.jpg");
-			background-repeat: no-repeat;
-			background-size: cover; 
-			background-position: center;/* */
-			/*box-shadow: 0px 0px 50px rgba(10,10,40,1);*/
-		}
-
-		div#navbar{
-			box-shadow: 0px 0px 10px rgba(20,20,20,1);
-		}
-
-		h1#main{
-			text-shadow: 2px 2px 10px rgba(255,255,255,1);
-			text-align: auto;
-			color: rgba(255,255,0,0.5);
-		}
-
-		h5#main {
-			font-size: 4vmin;
-			margin-left: auto;
-			text-align: left;
-			white-space: nowrap;
-			padding: 0px;
-		}
-
-		p#small-text {
-			font-size: 2.7vmin;
-			white-space: auto;
-			text-align: center;
-			
-		}
-
-		div#center{
-			/*background-color: rgba(100,0,255,0.5);*/
-			height: 7.5vw;
-			max-width: 100vw;
-		}
-
-		div#wrapper{
-			width: 100%;
-			height: 100%;
-			/*border: 10px solid red;*/
-			/*background-color: rgba(255,15,0,0.5);*/
-			overflow: hidden;
-			min-height: 500px; 
-		}
-
-		div#last-updated {
-			width: 100%;
-			height: auto;
-			/*background-color: rgba(255,255,0,0.5);*/
-		}
-
-		ul{
-			list-style-type:none;
-			margin:1vw;
-			padding:0vw;
-			background-color: rgba(0,0,0,0);
-			max-height: auto;
-			text-align: right;
-			position: relative;
-			float: left;
-			display: block;
-			left: 50%;
-		}
-
-		li {
-			position:relative;
-			float:left;
-			display: inline;
-			right: 50%
-		}
-
-		a#name{
-			/*background-color: rgba(0,100,0,0.5);*/
-			font-size: 15vmin;
-			color: rgba(255,255,255,0.9);
-			white-space: nowrap;
-			text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
-			/*margin: 30px;*/
-			text-align: center;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-
-		}
-
-		a#status{
-			font-style: "Lato";
-			font-size: 5vmin;
-			color: rgba(255,255,255,0.9);
-			white-space: nowrap;
-			text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
-			text-align: center;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		a#major {
-			font-style: "Lato";
-			font-size: 3.7vmin;
-			color: rgba(255,255,255,0.9);
-			white-space: auto;
-			text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
-			text-align: center;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		p#aboutme {
-			color: rgba(255,255,255,0.9);
-			font-size: 3.7vmin;
-			text-align: justify;
-			line-height: 2;
-			text-shadow: 1px 1px 3px rgba(0,0,0,1);
-			overflow: hidden;
-			padding: 5px;
-
-		}
-
-		a#btn-text {
-			width: 100%;
-			white-space: nowrap; 
-			font-size: 3.7vmin;
-		}
-
-		img#face {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-		}
-
-		img#icon {
-			width: 20vmin;
-			margin: 5px;
-		}
-
-		div#c1 {
-			width: 30%; 
-			display: inline-block; 
-			margin: 1%;
-			overflow: auto;
-		}
-
-
-
-		}
-
-		/* FOR ALL DESKTOP VIEWERS */
-
-
-
-
-
-
-
-
-
-
-		/* --------------------------------------------------------------------------*/
-
-		@media screen and (min-width: 500px) {
-
-
-		body{
-			
-			font-family: "Lato", sans-serif;
-			background-image: url("pics/IMG_4627 2.jpg");
-			background-repeat: no-repeat;
-			background-size: cover; 
-			background-position: center;/* */
-			/*box-shadow: 0px 0px 50px rgba(10,10,40,1);*/
-		}
-
-		div#navbar{
-			box-shadow: 0px 0px 10px rgba(20,20,20,1);
-		}
-
-		h1#main{
-			text-shadow: 2px 2px 10px rgba(255,255,255,1);
-			text-align: auto;
-			color: rgba(255,255,0,0.5);
-		}
-
-		h5#main {
-			font-size: 2vw;
-			margin-left: auto;
-		}
-
-		p#small-text {
-			font-size: 10pt;
-			white-space: nowrap;
-			
-		}
-
-		div#center{
-			/*background-color: rgba(100,0,255,0.5);*/
-			height: 7.5vw;
-			max-width: 100vw;
-		}
-
-		div#left{
-			/*background-color: rgba(0,0,100,0.5);*/
-			height: auto;
-			left: 0px;
-			width: 50%;
-			position: absolute;
-			animation-name: swoopLeft;
-			animation-duration: 1.75s;
-			display: block;
-			overflow: hidden;
-		}
-
-		div#right{
-			border-radius: 1vw;
-			padding: 10px;
-			margin: 5px;
-			background-color: rgba(30,30,30,0.30);
-			height: auto;
-			width: 50%;
-			position: absolute;
-			right: 0;
-			animation-name: swoopRight;
-			animation-duration: 2.25s;
-			display: block;
-			overflow: hidden;
-		}
-
-		div#wrapper{
-			width: 100%;
-			height: 60vw;
-			/*border: 10px solid red;*/
-			/*background-color: rgba(255,15,0,0.5);*/
-			overflow: hidden;
-			min-height: 500px; 
-		}
-
-		div#last-updated {
-			width: 100%;
-			height: auto;
-			/*background-color: rgba(255,255,0,0.5);*/
-		}
-
-		ul{
-			list-style-type:none;
-			margin:5px;
-			padding:10px;
-			background-color: rgba(0,0,0,0);
-			max-height: 300px;
-			text-align: right;
-			position: relative;
-			float: left;
-			display: block;
-			left: 50%;
-		}
-
-		li {
-			position:relative;
-			float:left;
-			display: inline;
-			right: 50%
-		}
-
-		a#name{
-			/*background-color: rgba(0,100,0,0.5);*/
-			font-size: 10vw;
-			color: rgba(255,255,255,0.9);
-			white-space: nowrap;
-			text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
-			/*margin: 30px;*/
-			text-align: center;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-
-		}
-
-		a#status{
-			font-style: "Lato";
-			font-size: 2.5vw;
-			color: rgba(255,255,255,0.9);
-			white-space: nowrap;
-			text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
-			text-align: center;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		a#major {
-			font-style: "Lato";
-			font-size: 1vw;
-			color: rgba(255,255,255,0.9);
-			white-space: nowrap;
-			text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
-			text-align: center;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		p#aboutme {
-			color: rgba(255,255,255,0.9);
-			font-size: 16px;
-			text-align: justify;
-			line-height: 2;
-			text-shadow: 1px 1px 3px rgba(0,0,0,1);
-			overflow: hidden;
-			padding: 5px;
-
-		}
-
-		a#btn-text {
-			width: 100%;
-			white-space: nowrap; 
-			font-size: 1vw;
-		}
-
-		img#face {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-		}
-
-		img#icon {
-			width: 7.75vmin;
-		}
-
-		div#c1 {
-			width: 30%; 
-			display: inline-block; 
-			margin: 1%;
-			overflow: auto;
-		}
-
-		@keyframes swoopLeft {
-			0% {left: -100px;}
-			100% {left: 0px;}
-		}
-
-		@keyframes swoopRight {
-			0% {right: -200px;}
-			100% {right: 0px;}
-		}
-
-		}
-
-		
-
-		</style>
+	
 
 	<body>
 		<div id="navbar">
@@ -406,7 +21,6 @@
 		</div>
 
 		<div id="center">
-
 			<ul>
 				<li>
 					<a href="https://www.instagram.com/pj.clet/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="My Instagram">
@@ -447,7 +61,7 @@
 
 				<!-- add this into the style class!-->
 				<div class="card" id="c1">
-					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
+					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume" id="cardPic">
 					<div class="card-body">
 						<h5 class="card-title" id="main">Resume</h5>
 						<p class="card-text" id="small-text">Last updated Jun 16, 2020</p>
@@ -456,16 +70,16 @@
 				</div>
 
 				<div class="card" id="c1">
-					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
+					<img src="pics/linked.png" class="card-img-top" alt="Preview of my LinkedIn" id="cardPic">
 					<div class="card-body">
-						<h5 class="card-title" id="main">Placeholder</h5>
-						<p class="card-text" id="small-text">Last updated Jun 16, 2020</p>
-						<a href="pics/resume.pdf" target="_blank" class="btn btn-danger" id="btn-text"> View </a>
+						<h5 class="card-title" id="main">LinkedIn</h5>
+						<p class="card-text" id="small-text">Last updated Jun 29, 2020</p>
+						<a href="https://www.linkedin.com/in/paul-john-clet-9048341aa/" target="_blank" class="btn btn-danger" id="btn-text"> View </a>
 					</div>
 				</div>
 
 				<div class="card" id="c1">
-					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume">
+					<img src="pics/resume-icon.png" class="card-img-top" alt="Preview of my resume" id="cardPic">
 					<div class="card-body">
 						<h5 class="card-title" id="main">Placeholder</h5>
 						<p class="card-text" id="small-text">Last updated Jun 16, 2020</p>
@@ -485,26 +99,7 @@
 		</div>
 
 		<div id="last-updated">
-			<p style="color: rgb(255,255,255,0.9); text-align: right; margin: 8px;"> Last updated June 28, 2020</p>
-
-		</div>
-
-		<!--
-		<div>
-			
-			<br/>
-			<div class="media" style="background-color: rgba(200,200,200,0.1); border-radius: 10px; padding: 5px; margin: 5px; width: auto;">
-				<img src="pics/IMG_0630.jpeg" class="align-self-start mr-3" alt="cardboard lambo" style="width: 64px; height: 64px;">
-				<div class="media-body">
-					<h5 class="mt-0"> Lamborghini Project</h5>
-					<p> this is a lambo project </p>
-				</div>
-				
-			</div>
-		-->
-
-			
-		</div>
+			<p style="color: rgb(255,255,255,0.9); text-align: right; margin: 8px;"> Last updated June 29, 2020</p>
 	</body>		
 		
 
